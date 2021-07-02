@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_statuses",
+  "info": {
+    "name": "product_status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "used",
+        "new"
+      ]
+    }
+  }
+}

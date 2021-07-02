@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-sizes",
+      "handler": "product-sizes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-sizes/count",
+      "handler": "product-sizes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-sizes/:id",
+      "handler": "product-sizes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-sizes",
+      "handler": "product-sizes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-sizes/:id",
+      "handler": "product-sizes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-sizes/:id",
+      "handler": "product-sizes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

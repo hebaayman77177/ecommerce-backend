@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "parent_category": {
+      "model": "category"
+    },
+    "sort_options": {
+      "collection": "sort-options",
+      "via": "categories",
+      "dominant": true
+    },
+    "products": {
+      "via": "categories",
+      "collection": "product",
+      "dominant": true
+    },
+    "facets": {
+      "collection": "facets",
+      "via": "categories",
+      "dominant": true
+    }
+  }
+}

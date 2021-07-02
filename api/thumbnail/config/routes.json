@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/thumbnail",
+      "handler": "thumbnail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/thumbnail",
+      "handler": "thumbnail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/thumbnail",
+      "handler": "thumbnail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

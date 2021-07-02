@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facets",
+  "info": {
+    "name": "facets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "ui": {
+      "type": "string"
+    },
+    "options": {
+      "type": "json"
+    },
+    "categories": {
+      "via": "facets",
+      "collection": "category"
+    }
+  }
+}

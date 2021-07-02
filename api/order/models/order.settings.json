@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "string"
+    },
+    "customer": {
+      "model": "customer"
+    },
+    "order_items": {
+      "collection": "order-item"
+    }
+  }
+}
